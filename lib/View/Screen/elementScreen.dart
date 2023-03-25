@@ -50,8 +50,10 @@ static String id= "ElementScreen";
                   width: 30,
                   height: 30,
                   color: Colors.orange,
-                        alignment: Alignment.center,
-                      child: Icon(Icons.minimize_rounded,size: 30,color:Colors.white),
+                      child: Padding(
+                        padding: const EdgeInsets.only(bottom: 10),
+                        child: Icon(Icons.minimize_rounded,size: 30,color:Colors.white),
+                      ),
                 ),
               ),
           Padding(

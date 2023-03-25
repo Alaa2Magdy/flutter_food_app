@@ -304,6 +304,132 @@ class FirstScreen extends StatelessWidget {
                   child: Image.asset("images/12.png",fit: BoxFit.fill),
                 ),
               ),
+              Container(
+                child: Padding(
+                  padding: const EdgeInsets.only(top: 260,left: 30),
+                  child: Text("classic pasta",style: TextStyle(fontSize: 15,color: Colors.black ,
+                      fontWeight: FontWeight.w100,fontStyle: FontStyle.normal)),
+                ),
+              ),
+              Container(
+                child: Padding(
+                  padding: const EdgeInsets.only(top: 300,left: 100),
+                  child: Text("60 LE",style: TextStyle(fontSize: 12,color: Colors.black ,
+                      fontWeight: FontWeight.w100,fontStyle: FontStyle.normal)),
+                ),
+              ),
+              Container(
+                child: Padding(
+                  padding: const EdgeInsets.only(top: 260,left: 200),
+                  child: Text("fettuccine pasta &\n chicken grill",style: TextStyle(fontSize: 13,color: Colors.black ,
+                      fontWeight: FontWeight.w200,fontStyle: FontStyle.normal)),
+                ),
+              ),
+              Container(
+                child: Padding(
+                  padding: const EdgeInsets.only(top: 300,left: 280),
+                  child: Text("80 LE",style: TextStyle(fontSize: 12,color: Colors.black ,
+                      fontWeight: FontWeight.w100,fontStyle: FontStyle.normal)),
+                ),
+              ),
+              Container(
+                child: Padding(
+                  padding: const EdgeInsets.only(top: 260,left: 360),
+                  child: Text("spaghetti & meatballs",style: TextStyle(fontSize: 13,color: Colors.black ,
+                      fontWeight: FontWeight.w200,fontStyle: FontStyle.normal)),
+                ),
+              ),
+              Container(
+                child: Padding(
+                  padding: const EdgeInsets.only(top: 300,left: 450),
+                  child: Text("90 LE",style: TextStyle(fontSize: 12,color: Colors.black ,
+                      fontWeight: FontWeight.w100,fontStyle: FontStyle.normal)),
+                ),
+              ),
+              Container(
+                child: Padding(
+                  padding: const EdgeInsets.only(top: 460,left: 30),
+                  child: Text("penne pasta",style: TextStyle(fontSize: 15,color: Colors.black ,
+                      fontWeight: FontWeight.w200,fontStyle: FontStyle.normal)),
+                ),
+              ),
+              Container(
+                child: Padding(
+                  padding: const EdgeInsets.only(top: 500,left: 100),
+                  child: Text("60 LE",style: TextStyle(fontSize: 12,color: Colors.black ,
+                      fontWeight: FontWeight.w100,fontStyle: FontStyle.normal)),
+                ),
+              ),
+              Container(
+                child: Padding(
+                  padding: const EdgeInsets.only(top: 460,left: 200),
+                  child: Text("carbonara pasta",style: TextStyle(fontSize: 15,color: Colors.black ,
+                      fontWeight: FontWeight.w100,fontStyle: FontStyle.normal)),
+                ),
+              ),
+              Container(
+                child: Padding(
+                  padding: const EdgeInsets.only(top: 500,left: 280),
+                  child: Text("65 LE",style: TextStyle(fontSize: 12,color: Colors.black ,
+                      fontWeight: FontWeight.w100,fontStyle: FontStyle.normal)),
+                ),
+              ),
+              Container(
+                child: Padding(
+                  padding: const EdgeInsets.only(top: 460,left: 360),
+                  child: Text("vegetarian farfalle",style: TextStyle(fontSize: 14,color: Colors.black ,
+                      fontWeight: FontWeight.w200,fontStyle: FontStyle.normal)),
+                ),
+              ),
+              Container(
+                child: Padding(
+                  padding: const EdgeInsets.only(top: 500,left: 450),
+                  child: Text("65 LE",style: TextStyle(fontSize: 12,color: Colors.black ,
+                      fontWeight: FontWeight.w100,fontStyle: FontStyle.normal)),
+                ),
+              ),
+              Container(
+                child: Padding(
+                  padding: const EdgeInsets.only(top: 660,left: 30),
+                  child: Text("seafood pasta",style: TextStyle(fontSize: 15,color: Colors.black ,
+                      fontWeight: FontWeight.w200,fontStyle: FontStyle.normal)),
+                ),
+              ),
+              Container(
+                child: Padding(
+                  padding: const EdgeInsets.only(top: 700,left: 100),
+                  child: Text("100 LE",style: TextStyle(fontSize: 12,color: Colors.black ,
+                      fontWeight: FontWeight.w100,fontStyle: FontStyle.normal)),
+                ),
+              ),
+              Container(
+                child: Padding(
+                  padding: const EdgeInsets.only(top: 660,left: 200),
+                  child: Text("pasta salad",style: TextStyle(fontSize: 15,color: Colors.black ,
+                      fontWeight: FontWeight.w200,fontStyle: FontStyle.normal)),
+                ),
+              ),
+              Container(
+                child: Padding(
+                  padding: const EdgeInsets.only(top: 700,left: 280),
+                  child: Text("75 LE",style: TextStyle(fontSize: 12,color: Colors.black ,
+                      fontWeight: FontWeight.w100,fontStyle: FontStyle.normal)),
+                ),
+              ),
+              Container(
+                child: Padding(
+                  padding: const EdgeInsets.only(top: 650,left: 360),
+                  child: Text("chinese noodles",style: TextStyle(fontSize: 14,color: Colors.black ,
+                      fontWeight: FontWeight.w200,fontStyle: FontStyle.normal)),
+                ),
+              ),
+              Container(
+                child: Padding(
+                  padding: const EdgeInsets.only(top: 700,left: 450),
+                  child: Text("70 LE",style: TextStyle(fontSize: 12,color: Colors.black ,
+                      fontWeight: FontWeight.w100,fontStyle: FontStyle.normal)),
+                ),
+              ),
             ],
           )
         ],
