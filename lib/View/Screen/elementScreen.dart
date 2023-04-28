@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:untitled/View/Screen/HomeAppBar.dart';
+import 'package:untitled/View/Screen/burger_meals.dart';
 import 'package:untitled/View/Screen/feedBackScreen.dart';
+import 'package:untitled/View/Screen/pizza_meals.dart';
 class ElementScreen extends StatelessWidget {
   const ElementScreen({Key? key}) : super(key: key);
 static String id= "ElementScreen";
+static int n = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -95,7 +99,7 @@ static String id= "ElementScreen";
           ),
           Padding(
             padding: const EdgeInsets.only(top: 640,left:150),
-            child: InkWell(onTap: (){Navigator.pushNamed(context,FeedBackScreen.id);
+            child: InkWell(onTap: (){Navigator.pushNamed(context,HomeAppBar.id);
             },
               child: Container(
                 width: 200,

@@ -2,11 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:untitled/View/Screen/pizza_meals.dart';
 import 'package:untitled/View/Screen/search_field.dart';
 import 'package:untitled/View/Screen/splashScreen.dart';
+import 'foodCategory.dart';
 List<String> images = [
   'images/img1.png', 'images/img2.png', 'images/img3.png',
   'images/img4.png', 'images/img5.png', 'images/img6.png',
   'images/img7.png', 'images/img8.png', 'images/img9.png',
 ];
+
 
 List<String> titles = [
   'chicken barbecue', 'cheesy beef', 'crispy burger',
@@ -67,12 +69,13 @@ static String id="BurgerMeals";
               Expanded(
                 child: GridView.count(
                   crossAxisCount: 3,
-                  crossAxisSpacing: 10,
-                  mainAxisSpacing: 10,
+                  crossAxisSpacing: 5,
+                  mainAxisSpacing: 5,
                   scrollDirection: Axis.vertical,
                   padding: const EdgeInsets.all(10),
                   children: List.generate(9, (index) {
                     return Container(
+                      width: 80,height: 300,
                       margin: const EdgeInsets.only(right: 15,left: 15),
                       padding: const EdgeInsets.all(12),
                       decoration: BoxDecoration(
@@ -87,28 +90,33 @@ static String id="BurgerMeals";
                         children: [
                           Expanded(
                             child: Center(
-                              child: Image.asset(images[index]),
+                              child:Image.asset(images[index]),
                             ),
                           ),
                           Text(
                             titles[index],
                             style: const TextStyle(
                               fontWeight: FontWeight.bold,
-                              fontSize: 16,
+                              fontSize: 11.5,
                             ),
                           ),
-                          const SizedBox(height: 10),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              Text(
-                                prices[index],
-                                style: const TextStyle(
-                                  fontSize: 16,
-                                  fontWeight: FontWeight.bold,
+                              Padding(
+                                padding: const EdgeInsets.only(top: 10),
+                                child: Text(
+                                  prices[index],
+                                  style: const TextStyle(
+                                    fontSize: 10,
+                                    fontWeight: FontWeight.bold,
+                                  ),
                                 ),
                               ),
-                              const Icon(Icons.favorite, color: Colors.orangeAccent,),
+                              Padding(
+                                padding: const EdgeInsets.only(top: 10),
+                                child: const Icon(Icons.favorite, color: Colors.orangeAccent,size: 10,),
+                              ),
                             ],
                           )
                         ],

@@ -292,11 +292,13 @@ static String id="HomeAppBar";
                             ),
 
                             child:
-                            Text("250 LE",
-                              style: TextStyle(
-                                fontSize: 20,
-                                fontWeight: FontWeight.bold,
-                                color: Colors.white,
+                            InkWell(onTap:(){Navigator.pushNamed(context,FeedBackScreen.id);},
+                              child: Text("250 LE",
+                                style: TextStyle(
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.white,
+                                ),
                               ),
                             )
                         ),

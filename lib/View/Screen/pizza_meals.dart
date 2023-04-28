@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:untitled/View/Screen/feedBackScreen.dart';
 import 'package:untitled/View/Screen/search_field.dart';
 import 'package:untitled/View/Screen/splashScreen.dart';
-
+import 'foodCategory.dart';
 List<String> images = [
   'images/pizza1.png', 'images/pizza2.png', 'images/pizza3.png',
   'images/pizza4.png', 'images/pizza5.png', 'images/pizza6.png',
@@ -86,15 +86,21 @@ static String id="PizzaMeals";
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Expanded(
-                            child: Center(
-                              child: Image.asset(images[index]),
-                            ),
+                              child: Stack(
+                                children:[
+                                  Container(
+                                  width:80,height: 80,
+                                  child:
+                                  Image.asset(images[index],fit: BoxFit.fill,)
+                                )
+                                ]
+                              ),
                           ),
                           Text(
                             titles[index],
                             style: const TextStyle(
                               fontWeight: FontWeight.bold,
-                              fontSize: 16,
+                              fontSize: 11.5,
                             ),
                           ),
                           const SizedBox(height: 10),
@@ -104,11 +110,11 @@ static String id="PizzaMeals";
                               Text(
                                 prices[index],
                                 style: const TextStyle(
-                                  fontSize: 16,
+                                  fontSize: 10,
                                   fontWeight: FontWeight.bold,
                                 ),
                               ),
-                              const Icon(Icons.favorite, color: Colors.orangeAccent,),
+                              const Icon(Icons.favorite, color: Colors.orangeAccent,size: 10,),
                             ],
                           )
                         ],

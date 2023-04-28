@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:untitled/View/Screen/firstScreen.dart';
+import 'package:untitled/View/Screen/foodCategory.dart';
 
 class HomeScreen extends StatelessWidget {
   static String id='HomeScreen';
@@ -33,9 +34,20 @@ class HomeScreen extends StatelessWidget {
             width: 250,
             height: 50,
             alignment: Alignment.topCenter,
-            decoration: BoxDecoration( color: Color.fromARGB(244, 224, 182, 182),
+            decoration: BoxDecoration( color: Colors.transparent,
                 shape: BoxShape.rectangle,borderRadius: BorderRadius.circular(30),
                 border: Border.all(color:Color.fromRGBO(139,1,1,1))),
+            child: Padding(
+              padding: const EdgeInsets.only(left: 10),
+              child: TextField(
+                decoration: InputDecoration(
+                  disabledBorder: InputBorder.none,
+                  enabledBorder: InputBorder.none,
+                  focusedBorder: InputBorder.none,
+                  errorBorder: InputBorder.none,
+                ),
+              ),
+            ),
           ),
         ),
         Padding(
@@ -48,7 +60,7 @@ class HomeScreen extends StatelessWidget {
                   fontStyle: FontStyle.normal,fontWeight: FontWeight.bold),),
               decoration: BoxDecoration( color: Color.fromARGB(244, 224, 182, 182),
                 shape: BoxShape.rectangle,borderRadius: BorderRadius.circular(10),
-              )
+              ),
           ),
         ),
         Padding(
@@ -57,9 +69,20 @@ class HomeScreen extends StatelessWidget {
             width: 250,
             height: 50,
             alignment: Alignment.topCenter,
-            decoration: BoxDecoration( color: Color.fromARGB(244, 224, 182, 182),
+            decoration: BoxDecoration( color: Colors.transparent,
                 shape: BoxShape.rectangle,borderRadius: BorderRadius.circular(30),
                 border: Border.all(color:Color.fromRGBO(139,1,1,1))),
+            child: Padding(
+              padding: const EdgeInsets.only(left: 10),
+              child: TextField(
+                decoration: InputDecoration(
+                  disabledBorder: InputBorder.none,
+                  enabledBorder: InputBorder.none,
+                  focusedBorder: InputBorder.none,
+                  errorBorder: InputBorder.none,
+                ),
+              ),
+            ),
           ),
         ),
         Padding(
@@ -84,7 +107,7 @@ class HomeScreen extends StatelessWidget {
               border: Border.all(color: Color.fromRGBO(139, 1, 1, 1)),borderRadius: BorderRadius.circular(30),),
             alignment: Alignment.bottomCenter,
             child: InkWell(onTap:(){
-              Navigator.pushNamed(context,FirstScreen.id);
+              Navigator.pushNamed(context,FoodCategory.id);
             },borderRadius: BorderRadius.circular(30),child:Container(
               alignment: Alignment.centerLeft,
               child: Padding(

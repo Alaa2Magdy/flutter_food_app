@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:untitled/View/Screen/foodCategory.dart';
 import 'package:untitled/View/Screen/homeScreen.dart';
 
 class OnBoardingScreen extends StatelessWidget {
@@ -23,9 +24,20 @@ class OnBoardingScreen extends StatelessWidget {
               width: 250,
               height: 50,
               alignment: Alignment.topCenter,
-              decoration: BoxDecoration( color: Color.fromARGB(244, 224, 182, 182),
+              decoration: BoxDecoration( color: Colors.transparent,
                   shape: BoxShape.rectangle,borderRadius: BorderRadius.circular(30),
                   border: Border.all(color:Color.fromRGBO(139,1,1,1))),
+              child: Padding(
+                padding: const EdgeInsets.only(left: 10),
+                child: TextField(
+                  decoration: InputDecoration(
+                    disabledBorder: InputBorder.none,
+                    enabledBorder: InputBorder.none,
+                    focusedBorder: InputBorder.none,
+                    errorBorder: InputBorder.none,
+                  ),
+                ),
+              ),
             ),
           ),
           Padding(
@@ -47,9 +59,20 @@ class OnBoardingScreen extends StatelessWidget {
               width: 250,
               height: 50,
               alignment: Alignment.topCenter,
-              decoration: BoxDecoration( color: Color.fromARGB(244, 224, 182, 182),
+              decoration: BoxDecoration( color: Colors.transparent,
                   shape: BoxShape.rectangle,borderRadius: BorderRadius.circular(30),
                   border: Border.all(color:Color.fromRGBO(139,1,1,1))),
+              child: Padding(
+                padding: const EdgeInsets.only(left: 10),
+                child: TextField(
+                  decoration: InputDecoration(
+                    disabledBorder: InputBorder.none,
+                    enabledBorder: InputBorder.none,
+                    focusedBorder: InputBorder.none,
+                    errorBorder: InputBorder.none,
+                  ),
+                ),
+              ),
             ),
           ),
           Padding(
@@ -71,9 +94,20 @@ class OnBoardingScreen extends StatelessWidget {
               width: 250,
               height: 50,
               alignment: Alignment.topCenter,
-              decoration: BoxDecoration( color: Color.fromARGB(244, 224, 182, 182),
+              decoration: BoxDecoration( color: Colors.transparent,
                   shape: BoxShape.rectangle,borderRadius: BorderRadius.circular(30),
                   border: Border.all(color:Color.fromRGBO(139,1,1,1))),
+              child: Padding(
+                padding: const EdgeInsets.only(left: 10),
+                child: TextField(
+                  decoration: InputDecoration(
+                    disabledBorder: InputBorder.none,
+                    enabledBorder: InputBorder.none,
+                    focusedBorder: InputBorder.none,
+                    errorBorder: InputBorder.none,
+                  ),
+                ),
+              ),
             ),
           ),
           Padding(
@@ -95,9 +129,20 @@ class OnBoardingScreen extends StatelessWidget {
               width: 250,
               height: 50,
               alignment: Alignment.topCenter,
-              decoration: BoxDecoration( color: Color.fromARGB(244, 224, 182, 182),
+              decoration: BoxDecoration( color: Colors.transparent,
                   shape: BoxShape.rectangle,borderRadius: BorderRadius.circular(30),
                   border: Border.all(color:Color.fromRGBO(139,1,1,1))),
+              child: Padding(
+                padding: const EdgeInsets.only(left: 10),
+                child: TextField(
+                  decoration: InputDecoration(
+                    disabledBorder: InputBorder.none,
+                    enabledBorder: InputBorder.none,
+                    focusedBorder: InputBorder.none,
+                    errorBorder: InputBorder.none,
+                  ),
+                ),
+              ),
             ),
           ),
           Padding(
@@ -119,9 +164,20 @@ class OnBoardingScreen extends StatelessWidget {
               width: 250,
               height: 50,
               alignment: Alignment.topCenter,
-              decoration: BoxDecoration( color: Color.fromARGB(244, 224, 182, 182),
+              decoration: BoxDecoration( color: Colors.transparent,
                   shape: BoxShape.rectangle,borderRadius: BorderRadius.circular(30),
                   border: Border.all(color:Color.fromRGBO(139,1,1,1))),
+              child: Padding(
+                padding: const EdgeInsets.only(left: 10),
+                child: TextField(
+                  decoration: InputDecoration(
+                    disabledBorder: InputBorder.none,
+                    enabledBorder: InputBorder.none,
+                    focusedBorder: InputBorder.none,
+                    errorBorder: InputBorder.none,
+                  ),
+                ),
+              ),
             ),
           ),
           Padding(
@@ -166,7 +222,7 @@ class OnBoardingScreen extends StatelessWidget {
     decoration: BoxDecoration(color: Colors.white,shape:BoxShape.rectangle,border: Border.all(color: Color.fromRGBO(139, 1, 1, 1)),borderRadius: BorderRadius.circular(30),),
     alignment: Alignment.bottomCenter,
     child: InkWell(onTap:(){
-    Navigator.pushNamed(context,HomeScreen.id);
+    Navigator.pushNamed(context,FoodCategory.id);
     },borderRadius: BorderRadius.circular(30),child:Container(
     alignment: Alignment.centerLeft,
     child: Padding(

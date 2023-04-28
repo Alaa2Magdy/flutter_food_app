@@ -1,11 +1,17 @@
 import 'package:flutter/material.dart';
+import 'package:untitled/View/Screen/burger_meals.dart';
+import 'package:untitled/View/Screen/custom_text.dart';
 import 'package:untitled/View/Screen/elementScreen.dart';
 import 'package:untitled/View/Screen/feedBackScreen.dart';
 import 'package:untitled/View/Screen/firstScreen.dart';
+import 'package:untitled/View/Screen/foodCategory.dart';
 import 'package:untitled/View/Screen/homeScreen.dart';
 import 'package:untitled/View/Screen/onBoardingScreen.dart';
+import 'package:untitled/View/Screen/pizza_meals.dart';
+import 'package:untitled/View/Screen/product_card.dart';
 import 'package:untitled/View/Screen/splashScreen.dart';
-
+import 'package:untitled/View/Screen/view.dart';
+import 'package:untitled/View/Screen/HomeAppBar.dart';
 void main() {
 
   runApp(const MyApp());
@@ -25,9 +31,13 @@ class MyApp extends StatelessWidget {
         FirstScreen.id:(context)=>FirstScreen(),
         ElementScreen.id:(context)=>ElementScreen(),
         FeedBackScreen.id:(context)=>FeedBackScreen(),
+        BurgerMeals.id:(context)=>BurgerMeals(),
+        AllProductsView.id:(context)=>AllProductsView(),
+        PizzaMeals.id:(context)=>PizzaMeals(),
+        HomeAppBar.id:(context)=>HomeAppBar(),
+        FoodCategory.id:(context)=>FoodCategory(),
       },
     );
-
-
+    
   }
 }

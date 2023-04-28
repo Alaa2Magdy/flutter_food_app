@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:path/path.dart';
 import 'package:untitled/View/Screen/elementScreen.dart';
-
+import 'foodCategory.dart';
 class FirstScreen extends StatelessWidget {
   static String id="FirstScreen";
   @override
@@ -46,38 +47,29 @@ class FirstScreen extends StatelessWidget {
               decoration: BoxDecoration( color: Colors.white,
                   shape: BoxShape.rectangle,borderRadius: BorderRadius.circular(30),
                   border: Border.all(color:Colors.white)),
+              child: Padding(
+                padding: const EdgeInsets.only(bottom: 14,left: 5),
+                child: TextField(
+                  decoration: InputDecoration(
+                    hintText: " Search Your Favourite Food...",
+                    hintStyle: TextStyle(fontSize: 12,color: Colors.grey,),
+                    prefix: Icon(Icons.search_rounded, color: Colors.black,size: 15,),
+                    disabledBorder: InputBorder.none,
+                    enabledBorder: InputBorder.none,
+                    focusedBorder: InputBorder.none,
+                    errorBorder: InputBorder.none,
+                  ),
+                ),
+              ),
             ),
-          ),
-          Padding(
-            padding: const EdgeInsets.only(top: 80,left: 60),
-            child: Container(
-              width: 20,
-              height: 20,
-              color: Colors.white,
-                child: Icon(Icons.search,size: 20,),
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.only(top: 82,left: 90),
-            child: Container(
-              width: 200,
-              height: 20,
-                decoration: BoxDecoration( color: Colors.white,
-                    shape: BoxShape.rectangle,borderRadius: BorderRadius.circular(30),
-                    border: Border.all(color:Colors.white)),
-              alignment: Alignment.topLeft,
-              child: Text('Search Your Favourite Food...',
-                  style: TextStyle(fontSize: 12.0,color: Colors.black12,fontStyle: FontStyle.normal,fontWeight: FontWeight.bold)
-            ),
-          ),
           ),
           Padding(
             padding: const EdgeInsets.only(top: 71,left: 401),
             child: Container(
               width:40,
               height:40,
-              decoration: (BoxDecoration(color:  Color.fromRGBO(
-                    211, 14, 14, 0.9568627450980393),shape:BoxShape.rectangle,borderRadius: BorderRadius.circular(10))
+              decoration: (BoxDecoration(color:  Color.fromRGBO(211, 14, 14, 0.9568627450980393),
+                  shape:BoxShape.rectangle,borderRadius: BorderRadius.circular(10))
                 ),
               child: Icon(Icons.read_more,size: 20,color: Colors.white,),
                 ),
